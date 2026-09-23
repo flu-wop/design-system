@@ -30,5 +30,5 @@
   --if-btn-lg-transform: none;
   --if-btn-lg-tracking: normal;
   --if-badge-radius: 9999px;
-  color-scheme: light;
+  color-scheme: normal; /* keep the site's own native-control rendering */
 }

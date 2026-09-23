@@ -25,5 +25,5 @@
   --if-btn-tracking: 0.08em;
   --if-btn-primary-tracking: 0.08em;
   --if-btn-lg-tracking: 0.08em;
-  color-scheme: dark;
+  color-scheme: normal; /* keep the site's own native-control rendering */
 }
