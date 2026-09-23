@@ -1,0 +1,140 @@
+/* IN-FLU-ENTIAL design tokens — generated from the IN-FLU-ENTIAL Design System (tokens.json). Do not edit by hand. */
+:root,
+[data-theme="studio"] {
+  --if-studio-black: #090909;
+  --if-charcoal: #111111;
+  --if-dark: #1a1a1a;
+  --if-card: #1c1c1c;
+  --if-border: #2a2a2a;
+  --if-gold: #d4af77;
+  --if-gold-light: #e8c97a;
+  --if-gold-dark: #b8935a;
+  --if-gold-muted: #9a7b50;
+  --if-gold-ink: #7a5c2b;
+  --if-cream: #f5edd8;
+  --if-mist: #a89880;
+  --if-paper: #ffffff;
+  --if-paper-warm: #faf7ef;
+  --if-paper-card: #f4eedf;
+  --if-paper-line: #e3dac6;
+  --if-umber: #6b5e4b;
+  --if-surface: var(--if-studio-black);
+  --if-surface-alt: var(--if-charcoal);
+  --if-surface-raised: var(--if-dark);
+  --if-surface-card: var(--if-card);
+  --if-line: var(--if-border);
+  --if-line-strong: #736a5d;
+  --if-ink: var(--if-cream);
+  --if-ink-muted: var(--if-mist);
+  --if-accent: var(--if-gold);
+  --if-accent-hover: var(--if-gold-light);
+  --if-accent-text: var(--if-gold);
+  --if-accent-deep: var(--if-gold-dark);
+  --if-on-accent: var(--if-studio-black);
+  --if-success: #1d9e75;
+  --if-danger: #7f1d1d;
+  --if-on-danger: var(--if-cream);
+  --if-danger-text: #e07a6a;
+  --if-focus: var(--if-gold);
+  --if-ember: #e2452a;
+  --if-flame: #ff7a3c;
+  --if-ink-deep: #060605;
+  --if-bayou: #0b1512;
+  --if-prairie: #c4622a;
+  --if-parchment: #f2e8d5;
+  --if-nola-red: #8e2a2a;
+  --if-shadow-card: 0 1px 2px rgba(0,0,0,0.3);
+  --if-shadow-lift: 0 16px 40px rgba(0,0,0,0.5);
+  --if-shadow-vignette: inset 0 0 120px rgba(0,0,0,0.7);
+  --if-focus-ring: 0 0 0 2px #090909, 0 0 0 4px #d4af77;
+  color-scheme: dark;
+}
+
+[data-theme="paper"] {
+  --if-surface: var(--if-paper);
+  --if-surface-alt: var(--if-paper-warm);
+  --if-surface-raised: var(--if-paper-warm);
+  --if-surface-card: var(--if-paper-card);
+  --if-line: var(--if-paper-line);
+  --if-line-strong: #8a7e6a;
+  --if-ink: var(--if-studio-black);
+  --if-ink-muted: var(--if-umber);
+  --if-accent-hover: var(--if-gold-dark);
+  --if-accent-text: var(--if-gold-ink);
+  --if-success: #15785a;
+  --if-danger-text: #9b2c2c;
+  --if-focus: var(--if-gold-ink);
+  --if-shadow-card: 0 1px 2px rgba(9,9,9,0.06);
+  --if-shadow-lift: 0 12px 32px rgba(9,9,9,0.12);
+  --if-shadow-vignette: none;
+  --if-focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #7a5c2b;
+  color-scheme: light;
+}
+
+:root {
+  --if-font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --if-font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --if-font-mono: "DM Mono", ui-monospace, Menlo, monospace;
+  --if-space-1: 4px;
+  --if-space-2: 8px;
+  --if-space-3: 12px;
+  --if-space-4: 16px;
+  --if-space-5: 20px;
+  --if-space-6: 24px;
+  --if-space-8: 32px;
+  --if-space-12: 48px;
+  --if-space-16: 64px;
+  --if-space-24: 96px;
+  --if-radius-none: 0;
+  --if-radius-sm: 2px;
+  --if-radius-full: 9999px;
+  --if-duration-fast: 150ms;
+  --if-duration-base: 300ms;
+  --if-duration-slow: 500ms;
+  --if-duration-reveal: 700ms;
+  --if-duration-scroll: 1200ms;
+  --if-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --if-ease-standard: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --if-duration-fast: 0ms; --duration-base: 0ms; --duration-slow: 0ms; --duration-reveal: 0ms; --duration-scroll: 0ms; }
+}
+
+/* shadcn/ui compatibility — lets existing src/components/ui copies keep working during migration */
+:root, [data-theme="studio"], [data-theme="paper"] {
+  --background: var(--if-surface);
+  --foreground: var(--if-ink);
+  --card: var(--if-surface-card);
+  --card-foreground: var(--if-ink);
+  --popover: var(--if-surface-raised);
+  --popover-foreground: var(--if-ink);
+  --primary: var(--if-accent);
+  --primary-foreground: var(--if-on-accent);
+  --secondary: var(--if-surface-raised);
+  --secondary-foreground: var(--if-ink);
+  --muted: var(--if-surface-raised);
+  --muted-foreground: var(--if-ink-muted);
+  --accent: var(--if-surface-raised);
+  --accent-foreground: var(--if-accent-text);
+  --destructive: var(--if-danger);
+  --destructive-foreground: var(--if-on-danger);
+  --border: var(--if-line);
+  --input: var(--if-line-strong);
+  --ring: var(--if-focus);
+  --radius: var(--if-radius-sm);
+  /* legacy globals.css names used by the 7 ecosystem sites */
+  --color-black: var(--if-surface);
+  --color-charcoal: var(--if-surface-alt);
+  --color-dark: var(--if-surface-raised);
+  --color-card: var(--if-surface-card);
+  --color-border: var(--if-line);
+  --color-gold: var(--if-gold);
+  --color-gold-light: var(--if-gold-light);
+  --color-gold-dark: var(--if-gold-dark);
+  --color-cream: var(--if-cream);
+  --color-mist: var(--if-mist);
+  --font-display: var(--if-font-display);
+  --font-sans: var(--if-font-sans);
+  --font-mono: var(--if-font-mono);
+}

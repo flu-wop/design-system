@@ -1,0 +1,26 @@
+/* IN-FLU-ENTIAL base + shared utilities. Low specificity (:where) so a site's own styles win. */
+
+:where(html) { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+:where(body) { background: var(--if-surface); color: var(--if-ink); font-family: var(--if-font-sans); line-height: 1.6; }
+:where(h1, h2, h3, h4, h5, h6) { font-family: var(--if-font-display); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; }
+:where(a:not([class])) { color: var(--if-accent-text); text-underline-offset: 3px; }
+::selection { background: var(--if-accent-deep); color: var(--if-on-accent); }
+:where(:focus-visible) { outline: none; box-shadow: var(--if-focus-ring); }
+
+/* Gold gradient text — one hero word at most */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--if-gold-light) 0%, var(--if-gold) 40%, var(--if-gold-dark) 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+/* 4% film grain over a positioned parent */
+.grain-overlay { position: relative; }
+.grain-overlay::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+.vignette { box-shadow: var(--if-shadow-vignette); }
+.card-lift { transition: transform var(--if-duration-base) var(--if-ease-out), box-shadow var(--if-duration-base) var(--if-ease-out); }
+.card-lift:hover { transform: translateY(-4px); box-shadow: var(--if-shadow-lift); }
+.gold-shimmer { background: linear-gradient(90deg, transparent 0%, var(--if-gold) 50%, transparent 100%); background-size: 200% 100%; animation: if-shimmer 2.5s linear infinite; }
+@keyframes if-shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .card-lift:hover { transform: none; } .gold-shimmer { animation: none; } }
