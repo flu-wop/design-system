@@ -7,7 +7,7 @@ The IN-FLU-ENTIAL design system as code: one set of colour and type tokens, a Ta
 | File | What |
 |---|---|
 | `styles.css` | Tokens as CSS variables (`--if-surface`, `--if-accent`…), studio + paper themes, base styles, shared utilities (`text-gold-gradient`, `grain-overlay`, `vignette`, `card-lift`), component styles |
-| `tailwind-preset.js` | Tailwind v3 preset: semantic colours (`bg-surface`, `text-ink-muted`, `bg-accent`, `border-line`…), type sizes (`text-heading-1`, `text-eyebrow`…), shadows, durations. Keeps the old names (`studio-black`, `gold`, `cream`, `mist`) working during migration |
+| `tailwind-preset.cjs` | Tailwind v3 preset: semantic colours (`bg-surface`, `text-ink-muted`, `bg-accent`, `border-line`…), type sizes (`text-heading-1`, `text-eyebrow`…), shadows, durations. Keeps the old names (`studio-black`, `gold`, `cream`, `mist`) working during migration |
 | `src/` | React components: `Button`, `Badge`, `Card`, `Input`, `SectionHeading`, `Vignette`, `CtaBlock`; `tokens` (resolved hex values for emails, Three.js and OG images) |
 | `tokens.json` | Source of truth, same file as the Design System page |
 | `scripts/migrate-colors.mjs` | Rewrites hard-coded `text-[#D4AF77]`-style classes to token classes |
