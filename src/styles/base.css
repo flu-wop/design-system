@@ -1,5 +1,9 @@
 /* IN-FLU-ENTIAL base + shared utilities. Low specificity (:where) so a site's own styles win. */
 
+/* Native controls (scrollbars, unstyled inputs, pickers) follow the theme. */
+:root, [data-theme="studio"] { color-scheme: dark; }
+[data-theme="paper"] { color-scheme: light; }
+
 :where(html) { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 :where(body) { background: var(--if-surface); color: var(--if-ink); font-family: var(--if-font-sans); line-height: 1.6; }
 :where(h1, h2, h3, h4, h5, h6) { font-family: var(--if-font-display); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; }

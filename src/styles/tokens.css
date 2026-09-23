@@ -47,7 +47,6 @@
   --if-shadow-lift: 0 16px 40px rgba(0,0,0,0.5);
   --if-shadow-vignette: inset 0 0 120px rgba(0,0,0,0.7);
   --if-focus-ring: 0 0 0 2px #090909, 0 0 0 4px #d4af77;
-  color-scheme: dark;
 }
 
 [data-theme="paper"] {
@@ -68,7 +67,6 @@
   --if-shadow-lift: 0 12px 32px rgba(9,9,9,0.12);
   --if-shadow-vignette: none;
   --if-focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #7a5c2b;
-  color-scheme: light;
 }
 
 :root {

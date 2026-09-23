@@ -61,6 +61,17 @@ import { SectionHeading, Vignette, CtaBlock, Button } from "@flu-wop/design-syst
 
 `data-theme="studio"` (dark, default) or `data-theme="paper"` (light: documents, print, light sections). Set it on `<html>` or on any section. A client brand becomes its own theme that re-points the same semantic variables; components don't change.
 
+### Ecosystem sites whose own base styles differ from MCS
+
+`styles.css` includes base element styles (body/heading fonts and tracking, link colour, `color-scheme: dark`, `.vignette`, `.card-lift`…) taken from MCS. A dark/gold site that has drifted from those can take everything except the base layer, so nothing on the page changes:
+
+```tsx
+import "@flu-wop/design-system/core.css";    // --if-* tokens + component styles
+import "@flu-wop/design-system/compat.css";  // shadcn + legacy --color-*/--font-* vars the preset's colours point at
+import "./globals.css";
+```
+Keep the preset. If the site's Tailwind config has no `fontFamily.sans`, pin `sans: defaultTheme.fontFamily.sans` (otherwise the preset makes the page default DM Sans); if it uses `ease-out`, pin `transitionTimingFunction: { out: "cubic-bezier(0, 0, 0.2, 1)" }`.
+
 ### Client-brand sites
 
 Client sites keep their own look, so they import `core.css` (tokens + component styles only: no base element styles, no shadcn/legacy variables) plus their theme, and skip the Tailwind preset:

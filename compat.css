@@ -1,0 +1,37 @@
+/* shadcn/ui compatibility — lets existing src/components/ui copies keep working during migration */
+:root, [data-theme="studio"], [data-theme="paper"] {
+  --background: var(--if-surface);
+  --foreground: var(--if-ink);
+  --card: var(--if-surface-card);
+  --card-foreground: var(--if-ink);
+  --popover: var(--if-surface-raised);
+  --popover-foreground: var(--if-ink);
+  --primary: var(--if-accent);
+  --primary-foreground: var(--if-on-accent);
+  --secondary: var(--if-surface-raised);
+  --secondary-foreground: var(--if-ink);
+  --muted: var(--if-surface-raised);
+  --muted-foreground: var(--if-ink-muted);
+  --accent: var(--if-surface-raised);
+  --accent-foreground: var(--if-accent-text);
+  --destructive: var(--if-danger);
+  --destructive-foreground: var(--if-on-danger);
+  --border: var(--if-line);
+  --input: var(--if-line-strong);
+  --ring: var(--if-focus);
+  --radius: var(--if-radius-sm);
+  /* legacy globals.css names used by the 7 ecosystem sites */
+  --color-black: var(--if-surface);
+  --color-charcoal: var(--if-surface-alt);
+  --color-dark: var(--if-surface-raised);
+  --color-card: var(--if-surface-card);
+  --color-border: var(--if-line);
+  --color-gold: var(--if-gold);
+  --color-gold-light: var(--if-gold-light);
+  --color-gold-dark: var(--if-gold-dark);
+  --color-cream: var(--if-cream);
+  --color-mist: var(--if-mist);
+  --font-display: var(--if-font-display);
+  --font-sans: var(--if-font-sans);
+  --font-mono: var(--if-font-mono);
+}

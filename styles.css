@@ -47,7 +47,6 @@
   --if-shadow-lift: 0 16px 40px rgba(0,0,0,0.5);
   --if-shadow-vignette: inset 0 0 120px rgba(0,0,0,0.7);
   --if-focus-ring: 0 0 0 2px #090909, 0 0 0 4px #d4af77;
-  color-scheme: dark;
 }
 
 [data-theme="paper"] {
@@ -68,7 +67,6 @@
   --if-shadow-lift: 0 12px 32px rgba(9,9,9,0.12);
   --if-shadow-vignette: none;
   --if-focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #7a5c2b;
-  color-scheme: light;
 }
 
 :root {
@@ -140,6 +138,10 @@
 }
 
 /* IN-FLU-ENTIAL base + shared utilities. Low specificity (:where) so a site's own styles win. */
+
+/* Native controls (scrollbars, unstyled inputs, pickers) follow the theme. */
+:root, [data-theme="studio"] { color-scheme: dark; }
+[data-theme="paper"] { color-scheme: light; }
 
 :where(html) { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 :where(body) { background: var(--if-surface); color: var(--if-ink); font-family: var(--if-font-sans); line-height: 1.6; }
