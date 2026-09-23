@@ -47,6 +47,14 @@ import { SectionHeading, Vignette, CtaBlock, Button } from "@flu-wop/design-syst
 
 <SectionHeading eyebrow="Studio booking" title="Sessions that pay before they start" emphasis="before" />
 <CtaBlock primary={{ label: "Book a session", href: "/studio" }} reassurance="Deposit refundable until your session is confirmed." />
+
+// Wrap Next's <Link> so navigation stays client-side
+<Button size="lg" variant="outline" asChild><Link href="/projects">Explore projects</Link></Button>
+```
+
+**Match the site's corners.** Components use `--if-radius-sm` (2px by default). If the site's Tailwind `rounded-sm` is driven by `--radius`, add this to its `globals.css` `:root` so both agree:
+```css
+--if-radius-sm: calc(var(--radius) - 4px);
 ```
 
 ## Themes

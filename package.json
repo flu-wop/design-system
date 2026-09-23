@@ -1,6 +1,6 @@
 {
   "name": "@flu-wop/design-system",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "IN-FLU-ENTIAL design system: tokens, Tailwind preset, base styles and shared React components for every flu-wop site.",
   "license": "UNLICENSED",
   "private": true,

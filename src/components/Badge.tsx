@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cx } from "../cx";
 
-export type BadgeVariant = "gold" | "outline" | "neutral" | "success" | "danger";
+export type BadgeVariant = "gold" | "outline" | "neutral" | "ghost" | "success" | "danger";
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   /** success and danger add a status dot; always include a word. */
   variant?: BadgeVariant;
