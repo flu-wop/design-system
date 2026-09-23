@@ -1,0 +1,34 @@
+/* Liquid Gold Skin Co. (liquidgoldskinco.com) — sand, cocoa, lagoon, guava. Values measured from the live site. */
+[data-theme="liquidgold"] {
+  --if-surface: #fbeedd;
+  --if-surface-alt: #fff8ef;
+  --if-surface-raised: #fff8ef;
+  --if-surface-card: #fff8ef;
+  --if-line: rgba(58, 35, 24, 0.1);
+  --if-line-strong: rgba(58, 35, 24, 0.3);
+  --if-ink: #3a2318;
+  --if-ink-muted: rgba(58, 35, 24, 0.7);
+  --if-accent: #1b9c93;
+  --if-accent-hover: #0f6b65;
+  --if-accent-text: #0f6b65;
+  --if-accent-deep: #0f6b65;
+  --if-on-accent: #fff8ef;
+  --if-success: #1b9c93;
+  --if-danger: #9b2c2c;
+  --if-on-danger: #fff8ef;
+  --if-danger-text: #9b2c2c;
+  --if-focus: #1b9c93;
+  --if-shadow-card: 0 1px 2px rgba(58,35,24,0.06);
+  --if-shadow-lift: 0 12px 32px rgba(58,35,24,0.12);
+  --if-shadow-vignette: none;
+  --if-focus-ring: 0 0 0 2px #fbeedd, 0 0 0 4px #1b9c93;
+  --if-font-display: var(--font-fraunces), Fraunces, Georgia, serif;
+  --if-font-sans: var(--font-manrope), Manrope, system-ui, sans-serif;
+  --if-radius-sm: 12px;
+  --if-btn-radius: 9999px;
+  --if-btn-lg-transform: none;
+  --if-btn-lg-tracking: 0.025em;
+  --if-btn-lg-size: 16px;
+  --if-badge-radius: 9999px;
+  color-scheme: light;
+}

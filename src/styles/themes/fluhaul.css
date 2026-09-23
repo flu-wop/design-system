@@ -1,0 +1,34 @@
+/* Flu-Haul (fluhaul.com) — cream, navy ink, haul green. Values measured from the live site. */
+[data-theme="fluhaul"] {
+  --if-surface: #faf9f6;
+  --if-surface-alt: #ffffff;
+  --if-surface-raised: #f4f1eb;
+  --if-surface-card: #ffffff;
+  --if-line: #ece7dc;
+  --if-line-strong: #ddd5c6;
+  --if-ink: #0f1f2e;
+  --if-ink-muted: #5f7d97;
+  --if-accent: #16a363;
+  --if-accent-hover: #0f7d4b;
+  --if-accent-text: #0f7d4b;
+  --if-accent-deep: #0f5c38;
+  --if-on-accent: #ffffff;
+  --if-success: #16a363;
+  --if-danger: #9b2c2c;
+  --if-on-danger: #ffffff;
+  --if-danger-text: #9b2c2c;
+  --if-focus: #16a363;
+  --if-shadow-card: 0 1px 3px rgba(15,31,46,0.08);
+  --if-shadow-lift: 0 12px 32px rgba(15,31,46,0.12);
+  --if-shadow-vignette: none;
+  --if-focus-ring: 0 0 0 2px #faf9f6, 0 0 0 4px #16a363;
+  --if-font-display: var(--font-inter), Inter, system-ui, sans-serif;
+  --if-font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  --if-radius-sm: 12px;
+  --if-btn-radius: 18px;
+  --if-btn-primary-tracking: normal;
+  --if-btn-lg-transform: none;
+  --if-btn-lg-tracking: normal;
+  --if-badge-radius: 9999px;
+  color-scheme: light;
+}

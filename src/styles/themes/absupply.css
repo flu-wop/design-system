@@ -1,0 +1,29 @@
+/* A&B Supply & Surplus (absupply.us) — shop-floor black, safety orange. Values measured from the live site. */
+[data-theme="absupply"] {
+  --if-surface: #111111;
+  --if-surface-alt: #161616;
+  --if-surface-raised: #222222;
+  --if-surface-card: #1c1c1c;
+  --if-line: #2a2a2a;
+  --if-line-strong: #3a3a3a;
+  --if-ink: #e8e8e8;
+  --if-ink-muted: #a0a0a0;
+  --if-accent: #e8900a;
+  --if-accent-hover: #f5a623;
+  --if-accent-text: #f5a623;
+  --if-accent-deep: #b5700a;
+  --if-on-accent: #111111;
+  --if-focus: #f5a623;
+  --if-focus-ring: 0 0 0 2px #111111, 0 0 0 4px #f5a623;
+  --if-font-display: "Bebas Neue", Impact, sans-serif;
+  --if-font-sans: Barlow, system-ui, sans-serif;
+  --if-radius-sm: 4px;
+  --if-btn-font: "Barlow Condensed", Barlow, sans-serif;
+  --if-btn-weight: 700;
+  --if-btn-primary-weight: 700;
+  --if-btn-transform: uppercase;
+  --if-btn-tracking: 0.08em;
+  --if-btn-primary-tracking: 0.08em;
+  --if-btn-lg-tracking: 0.08em;
+  color-scheme: dark;
+}

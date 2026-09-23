@@ -1,0 +1,39 @@
+/* EGOFF Essentials (egoffessentials.com) — ivory, deep emerald, warm gold. Values measured from the live site. */
+[data-theme="egoff"] {
+  --if-surface: #fffdf7;
+  --if-surface-alt: #ffffff;
+  --if-surface-raised: #ffffff;
+  --if-surface-card: #ffffff;
+  --if-line: rgba(6, 78, 59, 0.1);
+  --if-line-strong: rgba(183, 121, 31, 0.45);
+  --if-ink: #1a1a1a;
+  --if-ink-muted: #047857;
+  --if-accent: #064e3b;
+  --if-accent-hover: #065f46;
+  --if-accent-text: #064e3b;
+  --if-accent-deep: #022c22;
+  --if-on-accent: #ffffff;
+  --if-success: #059669;
+  --if-danger: #9b2c2c;
+  --if-on-danger: #ffffff;
+  --if-danger-text: #9b2c2c;
+  --if-focus: #b7791f;
+  --if-shadow-card: 0 1px 2px rgba(6,78,59,0.06);
+  --if-shadow-lift: 0 12px 32px rgba(6,78,59,0.12);
+  --if-shadow-vignette: none;
+  --if-focus-ring: 0 0 0 2px #fffdf7, 0 0 0 4px #b7791f;
+  --if-font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --if-font-sans: var(--font-lato), Lato, system-ui, sans-serif;
+  --if-radius-sm: 16px;
+  --if-btn-radius: 9999px;
+  --if-btn-size: 12px;
+  --if-btn-weight: 400;
+  --if-btn-primary-weight: 400;
+  --if-btn-transform: uppercase;
+  --if-btn-tracking: 0.1em;
+  --if-btn-primary-tracking: 0.1em;
+  --if-btn-lg-size: 14px;
+  --if-btn-lg-tracking: 0.1em;
+  --if-badge-radius: 9999px;
+  color-scheme: light;
+}

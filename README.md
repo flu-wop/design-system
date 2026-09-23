@@ -59,7 +59,22 @@ import { SectionHeading, Vignette, CtaBlock, Button } from "@flu-wop/design-syst
 
 ## Themes
 
-`data-theme="studio"` (dark, default) or `data-theme="paper"` (light: documents, print, light sections). Set it on `<html>` or on any section. A client brand becomes a third theme that re-points the same semantic variables; components don't change.
+`data-theme="studio"` (dark, default) or `data-theme="paper"` (light: documents, print, light sections). Set it on `<html>` or on any section. A client brand becomes its own theme that re-points the same semantic variables; components don't change.
+
+### Client-brand sites
+
+Client sites keep their own look, so they import `core.css` (tokens + component styles only: no base element styles, no shadcn/legacy variables) plus their theme, and skip the Tailwind preset:
+
+```tsx
+// src/app/layout.tsx
+import "@flu-wop/design-system/core.css";
+import "@flu-wop/design-system/themes/epoch.css";
+import "./globals.css";
+
+<html lang="en" data-theme="epoch"> … </html>
+```
+
+Themes: `epoch`, `jade`, `liquidgold`, `fluhaul`, `egoff`, `absupply` (in `src/styles/themes/`, values measured from each live site). Besides colours and fonts a theme can shape the shared components with `--if-btn-radius`, `--if-btn-font`, `--if-btn-size`, `--if-btn-weight`, `--if-btn-transform`, `--if-btn-tracking` (plus `sm-`/`lg-`/`primary-` variants) and `--if-badge-radius`.
 
 ## Migrating a site's colours
 

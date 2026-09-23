@@ -1,0 +1,39 @@
+/* Epoch Skin (epoch-skin.com) — parchment, gold, sage. Values measured from the live site. */
+[data-theme="epoch"] {
+  --if-surface: #faf7f2;
+  --if-surface-alt: #f7f2ea;
+  --if-surface-raised: #ffffff;
+  --if-surface-card: #ffffff;
+  --if-line: #e8e0d5;
+  --if-line-strong: #c0bab4;
+  --if-ink: #1c1c1a;
+  --if-ink-muted: #5a5550;
+  --if-accent: #c4974a;
+  --if-accent-hover: #d4aa6a;
+  --if-accent-text: #8a6420;
+  --if-accent-deep: #a87c30;
+  --if-on-accent: #ffffff;
+  --if-success: #6b7d62;
+  --if-danger: #9b2c2c;
+  --if-on-danger: #ffffff;
+  --if-danger-text: #9b2c2c;
+  --if-focus: #a87c30;
+  --if-shadow-card: 0 1px 2px rgba(28,28,26,0.06);
+  --if-shadow-lift: 0 12px 32px rgba(28,28,26,0.12);
+  --if-shadow-vignette: none;
+  --if-focus-ring: 0 0 0 2px #faf7f2, 0 0 0 4px #a87c30;
+  --if-font-display: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --if-font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  --if-radius-sm: 8px;
+  --if-btn-radius: 0;
+  --if-btn-size: 11px;
+  --if-btn-sm-size: 10px;
+  --if-btn-lg-size: 12px;
+  --if-btn-transform: uppercase;
+  --if-btn-tracking: 0.22em;
+  --if-btn-primary-tracking: 0.22em;
+  --if-btn-lg-tracking: 0.22em;
+  --if-btn-primary-weight: 500;
+  --if-badge-radius: 9999px;
+  color-scheme: light;
+}

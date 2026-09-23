@@ -1,0 +1,38 @@
+/* Jade the Gem (dahiddengem.com) — midnight plum, jade, gold. Values measured from the live site. */
+[data-theme="jade"] {
+  --if-surface: #0e0b14;
+  --if-surface-alt: #16121f;
+  --if-surface-raised: #1e1829;
+  --if-surface-card: #16121f;
+  --if-line: rgba(74, 63, 143, 0.3);
+  --if-line-strong: #4a3f8f;
+  --if-ink: #f0ebe8;
+  --if-ink-muted: #c4b8e0;
+  --if-accent: #4a3f8f;
+  --if-accent-hover: #6355b8;
+  --if-accent-text: #3aa898;
+  --if-accent-deep: #2a7a6f;
+  --if-on-accent: #f0ebe8;
+  --if-success: #3aa898;
+  --if-danger: #7f1d1d;
+  --if-on-danger: #f0ebe8;
+  --if-danger-text: #e07a6a;
+  --if-focus: #3aa898;
+  --if-shadow-card: 0 1px 2px rgba(0,0,0,0.3);
+  --if-shadow-lift: 0 16px 40px rgba(0,0,0,0.5);
+  --if-focus-ring: 0 0 0 2px #0e0b14, 0 0 0 4px #3aa898;
+  --if-font-display: var(--font-bebas), "Bebas Neue", Impact, sans-serif;
+  --if-font-sans: var(--font-montserrat), Montserrat, system-ui, sans-serif;
+  --if-radius-sm: 12px;
+  --if-btn-radius: 0;
+  --if-btn-size: 12px;
+  --if-btn-weight: 400;
+  --if-btn-primary-weight: 400;
+  --if-btn-transform: uppercase;
+  --if-btn-tracking: 0.2em;
+  --if-btn-primary-tracking: 0.2em;
+  --if-btn-lg-size: 14px;
+  --if-btn-lg-tracking: 0.2em;
+  --if-badge-radius: 9999px;
+  color-scheme: dark;
+}
