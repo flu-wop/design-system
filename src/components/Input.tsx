@@ -7,7 +7,10 @@ type FieldProps = {
   hint?: string;
   /** Replaces the hint and marks the field invalid. Say how to fix it. */
   error?: string;
+  /** Classes for the wrapper (layout: width, grid/flex placement). */
   className?: string;
+  /** Classes for the <input>/<textarea> itself, e.g. a height or font override. */
+  inputClassName?: string;
 };
 export type InputProps = FieldProps &
   (
@@ -15,13 +18,13 @@ export type InputProps = FieldProps &
     | ({ multiline: true } & Omit<React.TextareaHTMLAttributes<HTMLTextAreaElement>, "className">)
   );
 
-export function Input({ label, hint, error, className, id, multiline, ...rest }: InputProps) {
+export function Input({ label, hint, error, className, inputClassName, id, multiline, ...rest }: InputProps) {
   const auto = React.useId();
   const fieldId = id ?? `if-${auto}`;
   const noteId = `${fieldId}-note`;
   const shared = {
     id: fieldId,
-    className: cx("if-input", error && "if-input--error"),
+    className: cx("if-input", error && "if-input--error", inputClassName),
     "aria-invalid": error ? true : undefined,
     "aria-describedby": error || hint ? noteId : undefined,
   };

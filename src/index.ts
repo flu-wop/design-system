@@ -2,6 +2,7 @@ export { Button, type ButtonProps, type ButtonVariant, type ButtonSize } from ".
 export { Badge, type BadgeProps, type BadgeVariant } from "./components/Badge";
 export { Card, type CardProps } from "./components/Card";
 export { Input, type InputProps } from "./components/Input";
+export { Label, type LabelProps } from "./components/Label";
 export { SectionHeading, type SectionHeadingProps } from "./components/SectionHeading";
 export { Vignette, type VignetteProps, type VignetteRow } from "./components/Vignette";
 export { CtaBlock, type CtaBlockProps, type CtaAction } from "./components/CtaBlock";

@@ -48,6 +48,11 @@ import { SectionHeading, Vignette, CtaBlock, Button } from "@flu-wop/design-syst
 <SectionHeading eyebrow="Studio booking" title="Sessions that pay before they start" emphasis="before" />
 <CtaBlock primary={{ label: "Book a session", href: "/studio" }} reassurance="Deposit refundable until your session is confirmed." />
 
+// Form fields: label + field (+ hint/error) in one; inputClassName styles the control itself
+<Input label="Email *" id="email" type="email" placeholder="you@example.com" />
+<Input multiline label="Message *" inputClassName="h-40" />
+<Label>Preferred date</Label>  // a label on its own, for non-text controls
+
 // Wrap Next's <Link> so navigation stays client-side
 <Button size="lg" variant="outline" asChild><Link href="/projects">Explore projects</Link></Button>
 ```

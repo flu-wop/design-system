@@ -215,10 +215,13 @@
 .if-card__footer { margin-top: var(--if-space-4); display: flex; gap: var(--if-space-3); align-items: center; }
 
 /* Input */
-.if-field { display: grid; gap: var(--if-space-2); }
-.if-label { font-size: 14px; font-weight: 500; letter-spacing: 0.02em; color: var(--if-ink); }
-.if-input { font: inherit; font-size: 14px; width: 100%; height: 40px; padding: var(--if-space-2) var(--if-space-3); background: var(--if-surface-raised); color: var(--if-ink); border: 1px solid var(--if-line); border-radius: var(--if-radius-sm); transition: color var(--if-duration-fast), border-color var(--if-duration-fast); }
-textarea.if-input { height: auto; min-height: 96px; padding: var(--if-space-2) var(--if-space-3); resize: vertical; }
+/* Block + 8px stacking (MCS space-y-2); the label stays inline so it sits on a normal text line like MCS. */
+.if-field { display: block; }
+.if-field > * + * { margin-top: var(--if-space-2); }
+/* Label + Input — match MCS ui/label.tsx and ui/input.tsx (MCS is canonical) */
+.if-label { font-size: 12px; line-height: 1; font-weight: 500; letter-spacing: 0.025em; text-transform: uppercase; color: var(--if-ink-muted); }
+.if-input { display: flex; font: inherit; font-size: 14px; line-height: 20px; width: 100%; height: 40px; padding: var(--if-space-2) var(--if-space-3); background: var(--if-surface-raised); color: var(--if-ink); border: 1px solid var(--if-line); border-radius: var(--if-radius-sm); transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-duration: var(--if-duration-fast); transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+:where(textarea).if-input { height: auto; min-height: 80px; padding: var(--if-space-2) var(--if-space-3); resize: none; }
 .if-input::placeholder { color: color-mix(in srgb, var(--if-ink-muted) 50%, transparent); }
 .if-input:focus { outline: none; border-color: var(--if-focus); box-shadow: 0 0 0 1px var(--if-focus); }
 .if-input:disabled { cursor: not-allowed; opacity: .5; }
@@ -252,4 +255,4 @@ textarea.if-input { height: auto; min-height: 96px; padding: var(--if-space-2) v
 .if-cta__note { margin: 0; font-size: 12px; line-height: 18px; color: var(--if-ink-muted); }
 
 @media (prefers-reduced-motion: reduce) { .if-btn, .if-card--lift { transition: none; } .if-card--lift:hover { transform: none; } }
-a.if-btn { text-decoration: none; }
+:where(a).if-btn { text-decoration: none; }
