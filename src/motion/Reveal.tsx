@@ -18,7 +18,16 @@ export interface RevealProps {
 export function Reveal({ children, delay = 0, y = 28, className, as = "div" }: RevealProps) {
   const less = usePrefersLessMotion();
   const M = motion[as];
-  if (less) return <M className={className}>{children}</M>;
+  // Reduced motion: still a motion element (the server render starts hidden,
+  // since it can't know the preference), shown instantly on mount.
+  if (less) {
+    return (
+      <M className={className} initial={{ opacity: 0, y, filter: "blur(6px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={{ duration: 0 }}>
+        {children}
+      </M>
+    );
+  }
   return (
     <M
       className={className}
