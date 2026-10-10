@@ -14,7 +14,9 @@ export function CountUp({ value, className }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const less = usePrefersLessMotion();
   const inView = useInView(ref, { once: true, margin: "-10% 0px -10% 0px" });
-  const [display, setDisplay] = useState(match && !less ? `${match[1]}0${match[3]}` : value);
+  // Same first render on server and client (hydration-safe); reduced motion
+  // jumps straight to the value in the effect below.
+  const [display, setDisplay] = useState(match ? `${match[1]}0${match[3]}` : value);
   const mv = useMotionValue(0);
   const spring = useSpring(mv, { duration: 1400, bounce: 0 });
 
