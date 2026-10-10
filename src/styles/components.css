@@ -100,3 +100,9 @@
 .if-totop:hover { border-color: var(--if-accent); color: var(--if-accent-text); }
 .if-totop:focus-visible { outline: 2px solid var(--if-focus, var(--if-accent)); outline-offset: 2px; }
 @media (min-width: 768px) { .if-totop { right: 2rem; bottom: 2rem; width: 3rem; height: 3rem; } }
+
+/* Lenis smooth-scroll wiring (motion/SmoothScroll) */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
