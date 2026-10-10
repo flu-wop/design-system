@@ -62,6 +62,28 @@ import { SectionHeading, Vignette, CtaBlock, Button } from "@flu-wop/design-syst
 --if-radius-sm: calc(var(--radius) - 4px);
 ```
 
+## Motion (`@flu-wop/design-system/motion`)
+
+Cinematic scroll and hover effects, ported from Fire on the Bayou. A separate entry so sites without `framer-motion` and `lenis` never pull them in. Every piece goes still when the visitor prefers reduced motion.
+
+```bash
+npm install framer-motion lenis
+```
+
+| Component | What |
+|---|---|
+| `SmoothScroll` | Lenis inertial scroll; wrap the app once in the root layout |
+| `Reveal` | Fade + rise + unblur the first time it enters view (`delay`, `y`, `as`) |
+| `Parallax` | Scroll-linked drift (`speed` > 0 recedes, < 0 advances) |
+| `Magnetic` | CTA leans toward the cursor (mouse only) |
+| `CountUp` | Counts a leading number up when seen, keeps prefix/suffix ("$1,200", "20+") |
+| `GrainOverlay` | Fixed film grain + vignette tinted by `--if-accent` |
+| `ScrollToTop` | Back-to-top button + scroll reset on route change; `hidden` on admin |
+
+```tsx
+import { SmoothScroll, GrainOverlay, ScrollToTop, Reveal } from "@flu-wop/design-system/motion";
+```
+
 ## Themes
 
 `data-theme="studio"` (dark, default) or `data-theme="paper"` (light: documents, print, light sections). Set it on `<html>` or on any section. A client brand becomes its own theme that re-points the same semantic variables; components don't change.

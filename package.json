@@ -1,6 +1,6 @@
 {
   "name": "@flu-wop/design-system",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "IN-FLU-ENTIAL design system: tokens, Tailwind preset, base styles and shared React components for every flu-wop site.",
   "license": "UNLICENSED",
   "private": true,
@@ -9,6 +9,7 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
+    "./motion": "./src/motion/index.ts",
     "./styles.css": "./styles.css",
     "./core.css": "./core.css",
     "./compat.css": "./compat.css",
@@ -36,12 +37,30 @@
     "migrate": "node scripts/migrate-colors.mjs"
   },
   "peerDependencies": {
-    "react": ">=18"
+    "react": ">=18",
+    "framer-motion": ">=11",
+    "lenis": ">=1.1",
+    "next": ">=14"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.6.0"
+    "typescript": "^5.6.0",
+    "framer-motion": "^12.0.0",
+    "lenis": "^1.1.18",
+    "next": "^16.2.6",
+    "react-dom": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "framer-motion": {
+      "optional": true
+    },
+    "lenis": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    }
   }
 }
